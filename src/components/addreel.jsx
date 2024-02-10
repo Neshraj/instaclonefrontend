@@ -8,7 +8,7 @@ function Addreel() {
   const [shtk, setTick] = useState(false);
   let [glength, setLength] = useState(0);
   const navigate = useNavigate();
-  const mainServerUrl = 'http://localhost:4000';
+  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
   let gllemail;
 
   function addanother() {

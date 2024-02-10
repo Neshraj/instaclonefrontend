@@ -25,7 +25,7 @@ function Reels() {
   let chtrlikes=false;
   let finalpathforcopy = [];
   const navigate = useNavigate();
-  const mainServerUrl = 'http://localhost:4000';
+  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 
   let followingdata =[];
   let followfollowingdata = [];

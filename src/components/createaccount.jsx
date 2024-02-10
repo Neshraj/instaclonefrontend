@@ -16,7 +16,7 @@ function Createaccount(){
     })
 
     const navigate = useNavigate();
-    const mainServerUrl = 'http://localhost:4000';
+    const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 
     // server logic for otp
 

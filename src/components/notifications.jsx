@@ -12,7 +12,7 @@ function Notifications(){
     let [alluserstoreel, setUserToReel] = useState([])
     let sharedfilepath = [];
     let usertorell = [];
-    const mainServerUrl = 'http://localhost:4000';
+    const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 
     function navtoprl(index,event) {
       event.stopPropagation();

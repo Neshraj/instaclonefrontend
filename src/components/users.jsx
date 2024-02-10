@@ -18,7 +18,7 @@ function Users() {
   let followingdata = [];
   const navigate = useNavigate();
   const [mfollowfollowingdata, setFollowFollowingData] = useState([]);
-  const mainServerUrl = 'http://localhost:4000';
+  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 
 
 

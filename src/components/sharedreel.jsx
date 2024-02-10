@@ -17,7 +17,7 @@ function Reels() {
   let [rllength, setlenth] = useState([])
   let [allchangedindex, setChallindex] = useState([]);
   let [allfilestoshare, setSharefilepath] =useState([]);
-  const mainServerUrl = 'http://localhost:4000';
+  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 ;  let slkd =  [];
   const videoRefs = useRef([]);
   let currentIndex = 0;
