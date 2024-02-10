@@ -5,7 +5,6 @@ import {useNavigate} from "react-router-dom";
 function Addreel() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [gid, setUserid] = useState('');
-  const [shtk, setTick] = useState(false);
   let [glength, setLength] = useState(0);
   const navigate = useNavigate();
   const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
@@ -59,7 +58,6 @@ function Addreel() {
 
 
       setSelectedFile(files[0]);
-      setTick(true);
     }
   }
 

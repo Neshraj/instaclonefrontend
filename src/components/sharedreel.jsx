@@ -15,24 +15,17 @@ function Reels() {
   let [mainalluserids, setMainAllUserIds] =useState([]);
   let [reelupdata, setUpdat] = useState([]);
   let [rllength, setlenth] = useState([])
-  let [allchangedindex, setChallindex] = useState([]);
   let [allfilestoshare, setSharefilepath] =useState([]);
   const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 ;  let slkd =  [];
   const videoRefs = useRef([]);
   let currentIndex = 0;
-  let mum=true;
   let chtr=false;
-  let mumlikes=true;
-  let chtrlikes=false;
-  let finalpathforcopy = [];
   const navigate = useNavigate();
 
   let followingdata =[];
   let followfollowingdata = [];
-  let glfl = false;
   let nres1 = false;
-  let nres2 = false;
   let btfb = [];
   const [mfollowfollowingdata, setFollowFollowingData] = useState([]);
 
@@ -40,14 +33,11 @@ function Reels() {
 
   let followingdata1 = [];
   let glid;
-  let gcommanindex;
   let [globslindex, setGlobalIndex] = useState(0);
 
   //All data about reel
    let rlength = [];
-   let size = [];
    let date = [];
-   let name = [];
    let id = [];
    let nfl = [];
    let nfc = [];
@@ -87,7 +77,6 @@ function Reels() {
         alert(message);
       } else {
         
-        let nm =0;
         let ldata = JSON.parse(localStorage.getItem("logindata"));
         let {email} = ldata;
         for (const key in message) {
@@ -126,15 +115,12 @@ function Reels() {
           }
 
 
-          let {chunkSize} = message[key];
           let {filename} = message[key];
           let fuptch = window.location+'/stream-video/'+filename.replace(/ /g,"%20");
           let fuptch1 = fuptch.replace("/reels", "");
           let fuptch2 = fuptch1.replace(':3000/',':4000/');
           rfuulpathcopy.push(fuptch2);
 
-
-          let {length} = message[key];
           let {uploadDate} = message[key];
           date.push(uploadDate);
 
@@ -551,7 +537,6 @@ else{
           rnm.push(sm[0]);
           uid.push(sm[1])
         });
-        let smpallchind=[];
 
   const indices = Array.from({ length: rnm.length }, (_, index) => index);
 
@@ -587,7 +572,6 @@ else{
         setUpdat(date);
         setlenth(rlength);
         
-        setChallindex(indices);
         setSharefilepath(rfuulpathcopy);
         glid = uid;
 
@@ -850,7 +834,7 @@ else{
           reelfullpath : allfilestoshare[globslindex],
           touid : mainalluserids[index],
         };
-        let allrlnm = document.querySelectorAll('.background-video');
+
 
 
 
