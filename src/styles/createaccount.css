@@ -1,0 +1,134 @@
+#hero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#formlogo{
+    margin: 0 auto;
+}
+
+#allinputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.forminputs{
+    background-color: #ffffff;
+    outline: 0px;
+    height: 40px;
+    border: 0;
+    width: 300px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px #00000039;
+}
+
+#checkbox{
+    box-shadow: 2px 2px 4px 2px #00000039;
+    margin-left: -250px;
+}
+
+#createbutton{
+    width: 100px;
+    border: 0;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 2px #00000039;
+    font-weight: bold;
+    color: rgb(67, 67, 67);
+    
+}
+
+#otp{
+    width: 200px !important;
+    margin-right: 25px;
+}
+
+#getotp{
+    border: 0;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 2px #00000039;
+    font-weight: bold;
+    color: rgb(67, 67, 67);
+}
+
+#footer{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    
+}
+
+.password-container {
+    position: relative;
+    width: 300px;
+  }
+
+  #password-input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  #show-password-btn2 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    user-select: none !important;
+    font-size: smaller;
+    color: rgb(134, 134, 134) !important;
+  }
+
+
+@media only screen and (max-width: 700px) {
+
+    #form{
+        height: 500px !important;
+        width: 400px;
+    }
+
+    #allinputs{
+        margin-top: 50px !important;
+    }
+
+    .forminputs{
+        margin: 5px 0 !important;
+    }
+
+    #checkbox{
+        margin-left: -285px !important;
+    }
+
+    #otp{
+        margin-right: 40px !important;
+    }
+
+    #rememberme{
+        margin-left: -30px !important;
+        margin-right: 150px !important;
+    }
+
+    #remtext{
+        top: 30px !important;
+        right: 210px !important;
+    }
+
+
+}

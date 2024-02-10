@@ -1,0 +1,180 @@
+#hero{
+  display: flex;
+  height: 90vh;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeeecc;
+  margin: auto;
+  width: 450px !important;
+  box-shadow: 1px 1px 2px 1px #5a5a5a;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+#logotext{
+  width: 150px;
+}
+
+#formlogos{
+  display: flex;
+  flex-direction: row;
+  -border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  position: relative;
+  width: 300px;
+}
+
+#password-input {
+  width: calc(100% - 30px);
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#show-password-btn {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  cursor: pointer;
+  font-size: smaller;
+  user-select: none !important;
+  color: rgb(134, 134, 134);
+}
+
+#formitem{
+  margin: auto;
+
+}
+
+.formitems{
+  border: 0px;
+  outline: 0px;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  margin: 10px 16%;
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  color: #000;
+  box-shadow: 1px 1px 2px 1px #aeaeae;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logsign{
+  width: 80px;
+  padding: 10px;
+  border: 0px;
+  background-color: #ffffff !important;
+  font-weight: bold;
+  color: rgb(67, 67, 67);
+  box-shadow: 1px 1px 2px 1px #aeaeae;
+  border-radius: 10px;cursor: pointer;
+}
+
+#forgotpassword{
+  margin-left: 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  #hero{
+    display: flex;
+    height: 90vh;
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeeecc;
+    margin: auto;
+    width: 350px !important;
+    box-shadow: 1px 1px 2px 1px #5a5a5a;
+    border-radius: 25px;
+    margin-top: 30px;
+  }
+
+  #logotext{
+    width: 150px;
+  }
+
+  #formlogos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .password-container {
+    position: relative;
+    width: 300px;
+  }
+
+  #password-input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  #show-password-btn {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    cursor: pointer;
+    font-size: smaller;
+  }
+
+  #formitem{
+    margin: auto;
+
+  }
+
+  .formitems{
+    border: 0px;
+    outline: 0px;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    margin: 10px 16%;
+    border-radius: 10px;
+    background-color: #dedede;
+    color: #000;
+    box-shadow: 1px 1px 2px 1px #aeaeae;
+  }
+
+  #footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logsign{
+    width: 80px;
+    padding: 10px;
+    border: 0px;
+    background-color: #dedede;
+    color: rgb(67, 67, 67) !important;
+    box-shadow: 1px 1px 2px 1px #aeaeae;
+    border-radius: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+

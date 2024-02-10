@@ -1,0 +1,439 @@
+#reelsbody{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+
+
+  .background-video {
+    width: 340px;
+    height: 620px;
+    object-fit: fill;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    box-shadow: -10px 1px 60px 1px #a5a5a5a3;
+    outline: 0;
+    background-color: rgb(123, 123, 123);
+  }
+
+  .box{
+    box-shadow: 9px 1px 60px 1px #a5a5a5a3;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box:last-child{
+    margin-bottom: 50px;
+  }
+
+  /*Side controles*/
+.muteunmute{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.448);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.playbtn{
+  position: absolute;
+  margin: auto;
+  background-color: rgba(66, 66, 66, 0.448);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+
+  .sidecontroles{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 250px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+  }
+
+
+  .lcwdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidelcsdicond{
+    cursor: pointer;
+  }
+
+
+  #reelfooter{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    overflow: hidden;
+
+  }
+
+  #useididflwbtn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  #useididflwbtn button{
+    border: 0px;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 90px;
+    border: 1px solid #ffffff;
+    color: white;
+  }
+
+  .reelname{
+    margin-left: 5px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .reelid{
+    cursor: pointer;
+  }
+  .reelidl{
+    cursor: pointer;
+  }
+
+  #commanddiv{
+    background-color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px ;
+    box-shadow: 1px 1px 5px 1px #797979;
+    position: fixed;
+    top: 70px;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+
+  #commandhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    overflow-y: auto;
+    padding: 5px;
+
+}
+
+#closebtnc{
+  background-color: #c2c2c2;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #c5c5c5;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+#commandheadlb{
+  width: auto;
+  -border: 1px solid #000;
+  align-items: center;
+  margin: auto;
+  margin-left: 40%;
+}
+
+#commandbody{
+  -border: 1px solid #000;
+  width: 90%;
+  height: 280px;
+  overflow-y: auto;
+
+
+}
+
+
+.commandmsg{
+  width: auto;
+  padding: 1px 10px;
+  border-radius: 10px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 1px 1px 2px 1px #bfbfbf;
+  margin: 5px 0;
+  cursor: pointer;
+  text-wrap: wrap;
+  border-top-right-radius: 25px ;
+}
+
+
+#commandfoot{
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+#commandinput{
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #bfbfbf;
+  cursor: pointer;
+
+}
+
+#postcommandbtn{
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #bfbfbf;
+  cursor: pointer;
+}
+
+
+
+/*For share div*/
+
+#commanddivshr{
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px ;
+  box-shadow: 1px 1px 5px 1px #797979;
+  position: fixed;
+  top: 70px;
+  display: none;
+  overflow-x: hidden;
+
+}
+
+
+.shrebody{
+  height: 300px;
+  width: 90%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.copylink{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 1px 1px 2px 1px #cacaca;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#copyicon{
+  border: 0px solid #000;
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+
+.shuid{
+  width: 200px;
+  margin: 5px auto;
+  border-radius: 10px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 1px 1px 2px 1px #bfbfbf;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px;
+
+}
+
+.sharetoibtn{
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  right: 5px;
+  top: 6px;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px 1px #b5b5b5;
+  background-color: hsl(220, 100%, 89%);
+  cursor: pointer;
+}
+
+.malshid{
+  cursor: pointer;
+}
+
+
+#reeldetails{
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px ;
+  box-shadow: 1px 1px 5px 1px #797979;
+  position: fixed;
+  top: 70px;
+  display: none;
+  overflow-x: hidden;
+}
+
+#reeldatamain{
+  background-color: #ebebeb;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #d5d5d5;
+  padding: 10px;
+}
+
+
+
+.details{
+  text-align: start;
+  color: #000000;
+  
+}
+
+.chdetails{
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+*{
+  margin: 0;
+}
+
+
+.box{
+    margin-top: 15px;
+}
+
+
+.background-video{
+  margin: 0px 0;
+  height: 570px;
+  object-fit:fill;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.box:last-child{
+  margin-bottom: 70px;
+}
+
+#commanddiv{
+  width: 450px;
+}
+
+#commanddivshr{
+  width: 450px;
+}
+
+#reeldetails{
+  width: 450px;
+}
+
+
+}
+
+@media only screen and (max-width : 450px){
+
+    .background-video{
+        border-radius: 0;
+        height: 650px;
+        width: 100%;
+        box-shadow: 0 0 0 0 transparent;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+
+    }
+
+    #commanddiv{
+      width: 340px;
+      top: 100px;
+    }
+
+    #commanddivshr{
+      width: 340px;
+      top: 100px;
+    }
+
+    #reeldetails{
+      width: 340px;
+      top: 100px;
+    }
+
+
+
+
+}

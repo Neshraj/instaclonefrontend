@@ -1,0 +1,100 @@
+#herobox{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 2px solid #8a8a8a;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#instalogo{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.navicons{
+    margin-left: 15px;
+}
+
+.navlabs{
+    color: #000;
+}
+
+.navitems{
+    display: flex;
+    gap: 40px;
+    width: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.navitems:hover{
+    background-color: #dbdbdb;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    #instalogo{
+        display: none;
+    }
+    
+    .navlabs{
+        display: none;
+    }
+    
+    
+    
+    #herobox{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        border-top: 1px solid #b3aeae;
+        margin-bottom: 10px;
+        height: auto !important;
+    }
+    
+    .navitems{
+        margin-top: 5px;
+        display: flex;
+        width: 40px;
+        margin-left: auto;
+        padding: 0 !important;
+        border-radius: 5px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    
+
+
+    .navicons{
+        margin: auto;
+        padding: 15px;
+    }
+
+    .navitems:hover{
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (max-width : 450px){
+    #herobox{
+        position: fixed;
+        bottom: -5px;  
+    }
+}

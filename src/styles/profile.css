@@ -1,0 +1,271 @@
+#profile{
+    width: 100%;
+    height: 95vh;
+}
+
+#info{
+    border-top: 1px solid #747474;
+    border-bottom: 1px solid #747474;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0px;
+    margin: 0 10px;
+    margin-bottom: 5px;
+    
+
+}
+
+#logo{
+    margin: auto 0;
+    
+}
+
+#profimg{
+    width: 100px;
+    height: 100px;
+}
+
+#alldetails{
+    width: 300px;
+    margin: auto 0;
+    
+}
+
+#allinfotop{
+    display: flex;
+    justify-content: space-between;
+    color: #393939;
+    align-items: center;
+}
+
+
+#editbtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0px;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+}
+
+#settingsbtn{
+    cursor: pointer;
+    position: relative;
+}
+
+
+#followbtn{
+    border: 0px;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #e9e9e9;
+    width: 90px;
+}
+
+#followbtn:hover{
+    box-shadow: 1px 1px 2px 1px #aeaeaecf;
+}
+
+
+
+#allinfomidle{
+    display: flex;
+    justify-content: space-between;
+    color: #393939;
+    margin: 10px 0;
+}
+
+#allinfobottom{
+    color: #393939;
+    display: flex;
+    gap: 45px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flwflrlb{
+    cursor: pointer;
+}
+
+#frfwbox{
+    background-color: rgb(226, 226, 226);
+    max-width: 300px;
+    border: 0px solid #000;
+    margin: auto;
+    height: 60vh;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #616161;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 6px;
+    box-sizing: border-box;
+    
+
+
+}
+
+#frfwbox2{
+    background-color: rgb(226, 226, 226);
+    max-width: 300px;
+    margin: auto;
+    height: 60vh;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #616161;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+#frfwboxhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+
+    
+
+}
+
+#frfwboxheadlb{
+    margin-left: 20px;
+    color: #484848;
+}
+
+#closebtn{
+    margin-right: 20px;
+    margin-top: 5px;
+    background-color: #c2c2c2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px #c5c5c5;
+    cursor: pointer;
+}
+
+
+
+
+#flul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.flli{
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px #c5c5c5;
+    cursor: pointer;
+}
+
+
+/*Styling for post part in profile*/
+#posts{
+    height: 510px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 10px;
+    justify-content: flex-start;
+
+}
+
+.boxinprofile{
+    width: 100px;
+    height: 200px;
+    box-shadow: 1px 1px 2px 1px #767676;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+
+
+.background-videoinprofile{
+    width: 100px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    box-shadow: 1px 1px 5px 1px #a5a5a5a3;
+    outline: 0;
+    background-color: rgb(123, 123, 123);
+    cursor: pointer;
+
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    #profile{
+        height: 85vh;
+        padding: 10px;
+    }
+
+    #info{
+        padding: 10px;
+    }
+
+    #frfwbox{
+        transform: translate(-50%, -40%);
+    }
+
+    #frfwbox2{
+        transform: translate(-50%, -40%);
+    }
+
+    
+}
+
+
+@media only screen and (max-width : 550px){
+    #frfwbox{
+        transform: translate(-50%, -40%);
+    }
+
+    #frfwbox2{
+        transform: translate(-50%, -40%);
+    }
+}
+
+
+@media only screen and (max-width : 450px){
+    #frfwbox{
+        transform: translate(-50%, -40%);
+    }
+
+    #frfwbox2{
+        transform: translate(-50%, -40%);
+    }
+
+
+}
