@@ -240,13 +240,11 @@ useEffect(()=>{
         for (let i = 0; i < allUserIds.length; i++) {
           if (followingdata.includes(allUserIds[i])){
             followfollowingdata[i] = 'Unfollow';
-            nres2 = true;
             btfb.push(i);
-            glfl = true;
           }
           else{
             followfollowingdata[i] = 'Follow';
-            glfl = false;
+            
           }
         }
         setFollowFollowingData(followfollowingdata);// Update state using spread operator
@@ -260,49 +258,7 @@ useEffect(()=>{
     getmyfollowingdetails();
   }
 
-  // async function getallreelsdata() {
-  //   try {
-  //     const response = await fetch('http://localhost:4000/getallreelsdata', {
-  //       method: 'Get',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       }
-  //     });
 
-
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error! Status: ${response.status}`);
-  //     }
-
-  //     const { message } = await response.json();
-  //     if (message === 'sorry! there is some problem in fetching user details or check your internet connection and try again') {
-  //       alert(message);
-  //     } else {
-  //       let d1 = message.split(',');
-  //       let d2 = d1.slice(1);
-  //       let rnm = [];
-  //       let uid = []
-  //       d2.forEach((i,index)=>{
-
-  //         let sm = d2[index].split('|');
-  //         rnm.push(sm[0]);
-  //         uid.push(sm[1])
-  //       });
-  //       setReels(rnm);
-  //       setUserid(uid);
-  //       glid = uid;
-
-  //       let initialFollowData = new Array(useridm.length).fill(''); // Assuming initial value is an empty string
-  //       setMFollowFollowingData(initialFollowData);
-
-  //       getfollowingdetails(uid);
-        
-  //     }
-  //   } catch (error) {
-  //     console.log('error is ', error);
-  //   }
-  //   //getmyfollowingdetails();
-  // }
 
   const handleVideoPlayPause = (index) => {
     const video = videoRefs.current[index];
@@ -347,10 +303,10 @@ const handleVideoMuteUnmute = (event, index) => {
   let imgscr = document.querySelectorAll('.muteunmuteimg');
 
 if(chtr){
-  mum = true;
+  
 }
 else{
-  mum = false;
+  
 }
 
   //const videom = videoRefs.current[index];
