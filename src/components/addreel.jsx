@@ -35,7 +35,6 @@ function Addreel() {
     const files = event.dataTransfer.files;
 
     if (files.length > 0) {
-      const fileName = files[0].name;
       const fileSize = files[0].size;
       const fileSizeInMB = fileSize / (1024 * 1024);
       const formattedFileSize = fileSizeInMB.toFixed(2);
@@ -206,8 +205,7 @@ function Addreel() {
     const fileSize = fileInput.files[0]?.size;
     const fileSizeInMB = fileSize / (1024 * 1024);
     const formattedFileSize = fileSizeInMB.toFixed(2);
-    //alert(formattedFileSize);
-    // Update the label's text with the file name
+
     let label = document.getElementById('sctdropbox');
     if (label) {
       label.innerText = 'File size '+formattedFileSize+' mb';
@@ -222,7 +220,6 @@ function Addreel() {
     let videoDuration = videoElement.duration;
     // Convert video duration to seconds
     let formattedDuration = videoDuration.toFixed(2);
-    alert(formattedDuration);
     setLength(formattedDuration);
   })
   

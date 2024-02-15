@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../styles/profile.css';
 
@@ -9,7 +9,6 @@ function Profile() {
   }
 
   const navigate = useNavigate();
-  const location = useLocation();
   function logout(){
     localStorage.removeItem('logindata');
     navigate('/');
@@ -150,8 +149,6 @@ function Profile() {
       navigate('/');
     }
   },[])
-
-
 
 
   async function getallreelsdata(sid) {

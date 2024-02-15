@@ -21,9 +21,6 @@ function Reels() {
   let currentIndex = 0;
   let mum=true;
   let chtr=false;
-  let mumlikes=true;
-  let chtrlikes=false;
-  let finalpathforcopy = [];
   const navigate = useNavigate();
   const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
 
@@ -269,49 +266,6 @@ useEffect(()=>{
     getmyfollowingdetails();
   }
 
-  // async function getallreelsdata() {
-  //   try {
-  //     const response = await fetch('http://localhost:4000/getallreelsdata', {
-  //       method: 'Get',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       }
-  //     });
-
-
-  //     if (!response.ok) {
-  //       throw new Error(`HTTP error! Status: ${response.status}`);
-  //     }
-
-  //     const { message } = await response.json();
-  //     if (message === 'sorry! there is some problem in fetching user details or check your internet connection and try again') {
-  //       alert(message);
-  //     } else {
-  //       let d1 = message.split(',');
-  //       let d2 = d1.slice(1);
-  //       let rnm = [];
-  //       let uid = []
-  //       d2.forEach((i,index)=>{
-
-  //         let sm = d2[index].split('|');
-  //         rnm.push(sm[0]);
-  //         uid.push(sm[1])
-  //       });
-  //       setReels(rnm);
-  //       setUserid(uid);
-  //       glid = uid;
-
-  //       let initialFollowData = new Array(useridm.length).fill(''); // Assuming initial value is an empty string
-  //       setMFollowFollowingData(initialFollowData);
-
-  //       getfollowingdetails(uid);
-        
-  //     }
-  //   } catch (error) {
-  //     console.log('error is ', error);
-  //   }
-  //   //getmyfollowingdetails();
-  // }
 
   const handleVideoPlayPause = (index) => {
     const video = videoRefs.current[index];

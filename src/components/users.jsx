@@ -28,10 +28,7 @@ function Users() {
     async function getmyfollowingdetails() {
 
       try {
-        //let localdata = location.state;
-        //alert('ldata : ',localdata)
-        //let userid = id;
-        //alert('id : '+id);
+
         let ldata = JSON.parse(localStorage.getItem("logindata"));
         let {email} = ldata;
         let dataToServer = {
@@ -57,10 +54,7 @@ function Users() {
           console.log('second request : ',message);
           followingdata1 = message.split(',');
           followingdata1.splice(0, 1);
-          //alert('zxcv'+followingdata1)
-          //alert('followingdata1'+followingdata1);
-          //alert('userid'+glid);
-          //alert('import data'+followingdata1);
+
           for(let gi = 0; gi<=glid.length; gi++){
             //alert('inc '+glid[gi]);
             if (followingdata1.includes(glid[gi])){
@@ -155,11 +149,7 @@ function Users() {
             glfl = false;
           }
 
-          /*if (followingdata.includes(allUserIds[i])) {
-            followfollowingdata[i] = 'Following';
-          } else {
-            followfollowingdata[i] = 'Follow';
-          }*/
+
         }
         setFollowFollowingData([...followfollowingdata]); // Update state using spread operator
       }
