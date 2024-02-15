@@ -32,6 +32,7 @@ function Sidebar(){
 
     return (
         <div id='herobox'>
+            
                 <img src="/assets/images/insta.png" alt="instaimage" id='instalogo' />
 
                 <Link onClick={changebackground} style={{ textDecoration: 'none' }} to="/"><div id='mainhomebar' className="navitems"><img className='navicons' src="/assets/icons/home.png" alt="homeicon" /> <h4 className='navlabs'>Home</h4></div></Link>
