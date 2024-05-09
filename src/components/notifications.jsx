@@ -38,7 +38,7 @@ function Notifications(){
 
 
     async function clearnotdata(){
-
+        alert('in cls');
         setNotification(['No notifications']);
         let localdata;
         let dataToServer;
@@ -57,6 +57,7 @@ function Notifications(){
         catch{
           
         }
+
         try {
             const response = await fetch(mainServerUrl+'/clearnotifications', {
               method: 'POST',
