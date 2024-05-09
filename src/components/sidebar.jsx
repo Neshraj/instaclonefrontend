@@ -39,7 +39,7 @@ function Sidebar(){
 
                 <Link onClick={changebackground}  style={{ textDecoration: 'none' }} to="/search"><div id='mainsearchbar' className="navitems"><img className='navicons' src="/assets/icons/search.png" alt="homeicon" /> <h4 className='navlabs'>Search</h4></div></Link>
 
-                <Link onClick={changebackground} style={{ textDecoration: 'none' }} to="/explore"><div id='mainexplorebar' className="navitems"><img className='navicons' src="/assets/icons/compass.png" alt="compassicon" /> <h4 className='navlabs'>Explore</h4></div></Link>
+                <Link onClick={changebackground} style={{ textDecoration: 'none', display: 'none' }} to="/explore"><div id='mainexplorebar' className="navitems"><img className='navicons' src="/assets/icons/compass.png" alt="compassicon" /> <h4 className='navlabs'>Explore</h4></div></Link>
 
                 <Link onClick={changebackground} style={{ textDecoration: 'none' }} to="/reels"><div id='mainreelsbar' className="navitems"><img className='navicons' src="/assets/icons/video.png" alt="homeicon" /> <h4 className='navlabs'>Reels</h4></div></Link>
                 
