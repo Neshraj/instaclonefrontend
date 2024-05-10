@@ -1,0 +1,11 @@
+services:
+  - name: instaclone
+    type: static
+    buildCommand: npm run build
+    publishDir: build
+    routes:
+      - path: "/*"
+        headers:
+          - key: Cache-Control
+            value: "public, max-age=0, must-revalidate"
+        spa: true
