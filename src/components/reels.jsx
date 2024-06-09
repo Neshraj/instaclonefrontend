@@ -22,7 +22,7 @@ function Reels() {
   let mum=true;
   let chtr=false;
   const navigate = useNavigate();
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'http://localhost:4000';
 
   let followingdata =[];
   let followfollowingdata = [];

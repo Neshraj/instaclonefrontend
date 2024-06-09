@@ -25,7 +25,7 @@ function Profile() {
   let [followingdata, setFollowingdata] = useState([]);
 
   let [videoFilenames, setReels] = useState([]);
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'http://localhost:4000';
 
   function navtoreels(){
       navigate('/userposts', {
