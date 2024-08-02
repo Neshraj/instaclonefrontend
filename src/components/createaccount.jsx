@@ -25,7 +25,7 @@ function Createaccount(){
         if(!oemail){
             alert('Enter email id to receive OTP');
         }
-        else if(!oemail.endsWith('@gmail.com')){
+        else if(!oemail.endsWith('.com')){
             alert('Enter valid email');
         }
         else{
