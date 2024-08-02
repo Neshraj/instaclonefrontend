@@ -92,7 +92,7 @@ function Createaccount(){
             else if(userid.length<4){
                 alert('UserId length must be greater then 4')
             }
-            else if(!lemail.endsWith("@gmail.com")){
+            else if(!lemail.endsWith(".com")){
                 alert('Invalid Email Id')
             }
             else if(lpassword.length<3){
