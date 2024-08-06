@@ -51,7 +51,7 @@ function Home(){
             alert('Enter password')
             return;
         }
-        else if(!lemail.endsWith('@gmail.com')){
+        else if(!lemail.endsWith('com')){
             alert('Enter valid email id');
             return;
         }
