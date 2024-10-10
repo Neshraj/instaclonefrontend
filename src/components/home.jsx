@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Home(){
     const navigate = useNavigate();
-    const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+    const mainServerUrl = 'https://instacloneserver-raj1.onrender.com';
 
 
     //Functions starts hear
