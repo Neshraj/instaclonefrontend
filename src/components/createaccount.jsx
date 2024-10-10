@@ -25,7 +25,7 @@ function Createaccount(){
         if(!oemail){
             alert('Enter email id to receive OTP');
         }
-        else if(!oemail.endsWith('@gmail.com')){
+        else if(!oemail.endsWith('.com')){
             alert('Enter valid email');
         }
         else{
@@ -92,7 +92,7 @@ function Createaccount(){
             else if(userid.length<4){
                 alert('UserId length must be greater then 4')
             }
-            else if(!lemail.endsWith("@gmail.com")){
+            else if(!lemail.endsWith(".com")){
                 alert('Invalid Email Id')
             }
             else if(lpassword.length<3){
