@@ -17,7 +17,7 @@ function UserPosts() {
   let [rllength, setlenth] = useState([])
   let [allchangedindex, setChallindex] = useState([]);
   let [allfilestoshare, setSharefilepath] =useState([]);
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'https://instacloneserver-raj1.onrender.com';
 ;  let slkd =  [];
   const videoRefs = useRef([]);
   let currentIndex = 0;
