@@ -22,7 +22,7 @@ function Profile() {
   let glemail;
   const navigate = useNavigate();
   const location1 = useLocation();
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'https://instacloneserver-raj1.onrender.com';
 
 
   function navtoreels(){
