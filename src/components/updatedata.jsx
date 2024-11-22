@@ -28,7 +28,7 @@ function Updatedata() {
   const [name, setName] = useState('---');
   const [password, setPassword] = useState('---');
   const [cpassword, setCpassword] = useState('---');
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'https://instacloneserver-raj1.onrender.com';
 
   useEffect(() => {
 
