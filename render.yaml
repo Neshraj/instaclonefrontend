@@ -1,0 +1,8 @@
+static:
+  - name: instaclone-frontend
+    buildCommand: yarn build  # Or `npm run build` depending on your project setup
+    staticPublishPath: build
+    routes:
+      - type: rewrite
+        source: /**
+        destination: /index.html
