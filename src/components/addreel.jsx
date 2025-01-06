@@ -7,7 +7,7 @@ function Addreel() {
   const [gid, setUserid] = useState('');
   let [glength, setLength] = useState(0);
   const navigate = useNavigate();
-  const mainServerUrl = 'https://instacloneserver-00mi.onrender.com';
+  const mainServerUrl = 'https://instacloneserver-raj1.onrender.com';
   let gllemail;
 
   function addanother() {

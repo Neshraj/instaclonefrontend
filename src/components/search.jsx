@@ -21,7 +21,7 @@ function Search(){
       setErrorDisplay(false);
       setResultDisplay(false);
       try {
-        const response = await fetch('https://instacloneserver-00mi.onrender.com/allusers', {
+        const response = await fetch('https://instacloneserver-raj1.onrender.com/allusers', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
